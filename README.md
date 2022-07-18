@@ -1,5 +1,8 @@
 # OhMyHMCLPE
-
+仅供学习交流使用
+仅供学习交流使用
+仅供学习交流使用
+算法参考HMCL-PE开源项目
 HMCL-PE内测版
 验证码计算器
 纯Kotlin编写
