@@ -2,14 +2,13 @@ package com.lmcteam.ohmyhmclpe;
 
 public class A {
     public static String a(String d){
-        char[] c = d.toCharArray();
-        for (char s:
-             c) {
-            if(s!='\0'){
-                s+=1;
-                s|=1;
-            }
-        }
-        return  String.valueOf(c);
+        char[] result = d.toCharArray();
+for (int i = 0; i < result.length; i++) {
+			if(result[i]!='\0'){
+				result[i]+=1;
+				result[i]|=1;
+			}
+		}
+        return  String.valueOf(result);
     }
 }
