@@ -10,6 +10,6 @@ public class A {
                 s|=1;
             }
         }
-        return new String(c);
+        return  String.valueOf(c);
     }
 }
