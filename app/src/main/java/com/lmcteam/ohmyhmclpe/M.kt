@@ -32,15 +32,8 @@ class M : AppCompatActivity() {
 
             if (it == generateButton) {
                 var deviceCode = input.text.toString()
-                var chars = deviceCode.toCharArray()
-                for (i in chars.indices) {
-                    if (chars[i] != '\u0000') {
-                        chars[i]?.plus(1);
-                        chars[i] = (chars[i]?.toInt()?.or(1))?.toChar()!!
-                    }
-
-                }
-                result.text = toMD5(java.lang.String(chars as CharArray) as String)
+                var k = A.a(deviceCode)
+                result.text = toMD5(k).uppercase()
                 result.visibility = View.VISIBLE
                 copyBtn.visibility = View.VISIBLE
             } else if (it == copyBtn) {
